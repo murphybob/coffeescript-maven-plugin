@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.iron9light</groupId>
+  <artifactId>coffeescript-maven-plugin</artifactId>
+  <versioning>
+    <latest>1.2-BOB</latest>
+    <release>1.2-BOB</release>
+    <versions>
+      <version>1.2-SNAPSHOT</version>
+      <version>1.2-BOB</version>
+    </versions>
+    <lastUpdated>20130129154421</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <name>Coffeescript Maven Plugin</name>
+  <description>A Maven plugin for compiling coffeescript into javascript</description>
+  <groupId>com.github.iron9light</groupId>
+  <artifactId>coffeescript-maven-plugin</artifactId>
+  <version>1.2-BOB</version>
+  <goalPrefix>coffeescript</goalPrefix>
+  <isolatedRealm>false</isolatedRealm>
+  <inheritedByDefault>true</inheritedByDefault>
+  <mojos>
+    <mojo>
+      <goal>watch</goal>
+      <description>Compile coffeescript files to javascript files, and recompile as soon as a change occurs.</description>
+      <requiresDirectInvocation>false</requiresDirectInvocation>
+      <requiresProject>true</requiresProject>
+      <requiresReports>false</requiresReports>
+      <aggregator>false</aggregator>
+      <requiresOnline>false</requiresOnline>
+      <inheritedByDefault>true</inheritedByDefault>
+      <implementation>iron9light.coffeescriptMavenPlugin.CoffeeScriptWatchMojo</implementation>
+      <language>java</language>
+      <instantiationStrategy>per-lookup</instantiationStrategy>
+      <executionStrategy>once-per-session</executionStrategy>
+      <threadSafe>false</threadSafe>
+      <parameters>
+        <parameter>
+          <name>allowedDelete</name>
+          <type>java.lang.Boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Delete javascript file when the coffeescript file deleted.</description>
+        </parameter>
+        <parameter>
+          <name>bare</name>
+          <type>java.lang.Boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Bare mode.</description>
+        </parameter>
+        <parameter>
+          <name>cacheDirectory</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Cache directory if you want to turn caching on.</description>
+        </parameter>
+        <parameter>
+          <name>compilerUrl</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>CoffeeScript compiler file url.
+It supports both url string and file path string.
+e.g. http://coffeescript.org/extras/coffee-script.js or ${basedir}/lib/coffee-script.js</description>
+        </parameter>
+        <parameter>
+          <name>modifiedOnly</name>
+          <type>java.lang.Boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Only compile modified files.</description>
+        </parameter>
+        <parameter>
+          <name>outputDir</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Output Directory.</description>
+        </parameter>
+        <parameter>
+          <name>srcDir</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Source Directory.</description>
+        </parameter>
+      </parameters>
+      <configuration>
+        <allowedDelete implementation="java.lang.Boolean" default-value="true"/>
+        <bare implementation="java.lang.Boolean" default-value="false"/>
+        <modifiedOnly implementation="java.lang.Boolean" default-value="false"/>
+        <outputDir implementation="java.io.File" default-value="${basedir}/src/main/webapp"/>
+        <srcDir implementation="java.io.File" default-value="${basedir}/src/main/webapp"/>
+      </configuration>
+    </mojo>
+    <mojo>
+      <goal>compile</goal>
+      <description>Compile coffeescript files to javascript files.</description>
+      <requiresDirectInvocation>false</requiresDirectInvocation>
+      <requiresProject>true</requiresProject>
+      <requiresReports>false</requiresReports>
+      <aggregator>false</aggregator>
+      <requiresOnline>false</requiresOnline>
+      <inheritedByDefault>true</inheritedByDefault>
+      <phase>generate-resources</phase>
+      <implementation>iron9light.coffeescriptMavenPlugin.CoffeeScriptCompileMojo</implementation>
+      <language>java</language>
+      <instantiationStrategy>per-lookup</instantiationStrategy>
+      <executionStrategy>once-per-session</executionStrategy>
+      <threadSafe>false</threadSafe>
+      <parameters>
+        <parameter>
+          <name>bare</name>
+          <type>java.lang.Boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Bare mode.</description>
+        </parameter>
+        <parameter>
+          <name>cacheDirectory</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Cache directory if you want to turn caching on.</description>
+        </parameter>
+        <parameter>
+          <name>compilerUrl</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>CoffeeScript compiler file url.
+It supports both url string and file path string.
+e.g. http://coffeescript.org/extras/coffee-script.js or ${basedir}/lib/coffee-script.js</description>
+        </parameter>
+        <parameter>
+          <name>modifiedOnly</name>
+          <type>java.lang.Boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Only compile modified files.</description>
+        </parameter>
+        <parameter>
+          <name>outputDir</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Output Directory.</description>
+        </parameter>
+        <parameter>
+          <name>srcDir</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Source Directory.</description>
+        </parameter>
+      </parameters>
+      <configuration>
+        <bare implementation="java.lang.Boolean" default-value="false"/>
+        <modifiedOnly implementation="java.lang.Boolean" default-value="false"/>
+        <outputDir implementation="java.io.File" default-value="${basedir}/src/main/webapp"/>
+        <srcDir implementation="java.io.File" default-value="${basedir}/src/main/webapp"/>
+      </configuration>
+    </mojo>
+  </mojos>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <type>jar</type>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <type>jar</type>
+      <version>r09</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mozilla</groupId>
+      <artifactId>rhino</artifactId>
+      <type>jar</type>
+      <version>1.7R3</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <type>jar</type>
+      <version>1.7</version>
+    </dependency>
+  </dependencies>
+</plugin>

@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.mozilla</groupId>
+  <artifactId>rhino</artifactId>
+  <versioning>
+    <versions>
+      <version>1.7R3</version>
+    </versions>
+    <lastUpdated>20130129154421</lastUpdated>
+  </versioning>
+</metadata>

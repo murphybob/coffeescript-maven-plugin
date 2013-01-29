@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-job project="loadCompilerFromLocalFile\pom.xml" name="" description="" result="failure-build" time="1.541" type="normal">
+  <failureMessage>The build exited with code 1. See C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\build.log for details.</failureMessage>
+</build-job>

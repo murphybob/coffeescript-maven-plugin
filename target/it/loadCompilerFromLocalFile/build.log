@@ -1,0 +1,542 @@
+Apache Maven 3.0.4 (r1232337; 2012-01-17 08:44:56+0000)
+Maven home: C:\Program Files (x86)\apache-maven\bin\..
+Java version: 1.6.0_35, vendor: Sun Microsystems Inc.
+Java home: C:\Program Files\Java\jdk1.6.0_35\jre
+Default locale: en_GB, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from C:\Program Files (x86)\apache-maven\bin\..\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\interpolated-settings.xml
+[DEBUG] Using local repository at C:\Users\Metail\workspace\coffeescript-maven-plugin\target\local-repo
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10 for C:\Users\Metail\workspace\coffeescript-maven-plugin\target\local-repo
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project iron9light:coffeescript-maven-plugin_basictest:jar:testing: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: iron9light:coffeescript-maven-plugin_basictest:jar:testing
+[DEBUG] Tasks:   [clean, test]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building basictest testing
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       iron9light:coffeescript-maven-plugin_basictest:testing
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] Repositories (dependencies): [local.central (file:///C:/Users/Metail/.m2/repository, releases+snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [local.central (file:///C:/Users/Metail/.m2/repository, releases+snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.4.1:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.github.iron9light:coffeescript-maven-plugin:1.2-BOB:compile (coffee)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <bare default-value="false"/>
+  <compilerUrl>C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile/lib/coffee-script-1.1.2.js</compilerUrl>
+  <modifiedOnly default-value="false"/>
+  <outputDir default-value="${basedir}/src/main/webapp">C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target/coffee</outputDir>
+  <srcDir default-value="${basedir}/src/main/webapp">C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile/src/main/coffee</srcDir>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <outputFileName>${project.build.finalName}</outputFileName>
+  <projectArtifact default-value="${project.artifact}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>${project.build.testOutputDirectory}</outputDirectory>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources>${project.testResources}</resources>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <outputFileName>${project.build.finalName}</outputFileName>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.10:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository>${localRepository}</localRepository>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories>${project.pluginArtifactRepositories}</remoteRepositories>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <session>${session}</session>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] iron9light:coffeescript-maven-plugin_basictest:jar:testing
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ coffeescript-maven-plugin_basictest ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.collection < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.version < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.artifact < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.graph < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.resolution < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.4.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.4.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.4.1:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1, parent: sun.misc.Launcher$AppClassLoader@53372a1a]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.4.1:clean' with basic configurator -->
+[DEBUG]   (f) directory = C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\classes
+[DEBUG]   (f) reportDirectory = C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\site
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target
+[INFO] Deleting file C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\surefire\surefirebooter4999722366700560805.jar
+[INFO] Deleting file C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\surefire\surefire5830539872625536364tmp
+[INFO] Deleting file C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\surefire\surefire5687557411491454911tmp
+[INFO] Deleting directory C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\surefire
+[INFO] Deleting file C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\coffee\script\test3.js
+[INFO] Deleting file C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\coffee\script\test2.js
+[INFO] Deleting file C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\coffee\script\test1.js
+[INFO] Deleting directory C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\coffee\script
+[INFO] Deleting directory C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\coffee
+[INFO] Deleting directory C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target
+[DEBUG] Skipping non-existing directory C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\classes
+[DEBUG] Skipping non-existing directory C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\test-classes
+[DEBUG] Skipping non-existing directory C:\Users\Metail\workspace\coffeescript-maven-plugin\target\it\loadCompilerFromLocalFile\target\site
+[INFO] 
+[INFO] --- coffeescript-maven-plugin:1.2-BOB:compile (coffee) @ coffeescript-maven-plugin_basictest ---
+[DEBUG] com.github.iron9light:coffeescript-maven-plugin:jar:1.2-BOB:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0:compile
+[DEBUG]    com.google.guava:guava:jar:r09:compile
+[DEBUG]    org.mozilla:rhino:jar:1.7R3:compile
+[DEBUG]    commons-codec:commons-codec:jar:1.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.1:runtime
+[DEBUG] Created new class realm plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB
+[DEBUG] Importing foreign packages into class realm plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB
+[DEBUG]   Included: com.github.iron9light:coffeescript-maven-plugin:jar:1.2-BOB
+[DEBUG]   Included: com.google.guava:guava:jar:r09
+[DEBUG]   Included: org.mozilla:rhino:jar:1.7R3
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0
+[DEBUG] Configuring mojo com.github.iron9light:coffeescript-maven-plugin:1.2-BOB:compile from plugin realm ClassRealm[plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB, parent: sun.misc.Launcher$AppClassLoader@53372a1a]
+29-Jan-2013 15:44:27 org.sonatype.guice.bean.reflect.Logs$JULSink warn
+WARNING: Error injecting: iron9light.coffeescriptMavenPlugin.CoffeeScriptCompileMojo
+java.lang.TypeNotPresentException: Type iron9light.coffeescriptMavenPlugin.CoffeeScriptCompileMojo not present
+	at org.sonatype.guice.bean.reflect.URLClassSpace.loadClass(URLClassSpace.java:109)
+	at org.sonatype.guice.bean.reflect.NamedClass.load(NamedClass.java:45)
+	at org.sonatype.guice.bean.reflect.AbstractDeferredClass.get(AbstractDeferredClass.java:45)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:84)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:52)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:70)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:100)
+	at org.sonatype.guice.plexus.lifecycles.PlexusLifecycleManager.onProvision(PlexusLifecycleManager.java:138)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:108)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:55)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:68)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$3$1.call(InjectorImpl.java:965)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1011)
+	at com.google.inject.internal.InjectorImpl$3.get(InjectorImpl.java:961)
+	at com.google.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.sonatype.guice.bean.locators.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.guice.plexus.locators.LazyPlexusBean.getValue(LazyPlexusBean.java:49)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:253)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:245)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:455)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:92)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: java.lang.UnsupportedClassVersionError: iron9light/coffeescriptMavenPlugin/CoffeeScriptCompileMojo : Unsupported major.minor version 51.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:631)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:615)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
+	at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:386)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:244)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:230)
+	at org.sonatype.guice.bean.reflect.URLClassSpace.loadClass(URLClassSpace.java:101)
+	... 41 more
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.509s
+[INFO] Finished at: Tue Jan 29 15:44:27 GMT 2013
+[INFO] Final Memory: 3M/90M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.iron9light:coffeescript-maven-plugin:1.2-BOB:compile (coffee) on project coffeescript-maven-plugin_basictest: Execution coffee of goal com.github.iron9light:coffeescript-maven-plugin:1.2-BOB:compile failed: Unable to load the mojo 'compile' in the plugin 'com.github.iron9light:coffeescript-maven-plugin:1.2-BOB' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: iron9light/coffeescriptMavenPlugin/CoffeeScriptCompileMojo : Unsupported major.minor version 51.0
+[ERROR] -----------------------------------------------------
+[ERROR] realm =    plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB
+[ERROR] strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
+[ERROR] urls[0] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/github/iron9light/coffeescript-maven-plugin/1.2-BOB/coffeescript-maven-plugin-1.2-BOB.jar
+[ERROR] urls[1] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/google/guava/guava/r09/guava-r09.jar
+[ERROR] urls[2] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/mozilla/rhino/1.7R3/rhino-1.7R3.jar
+[ERROR] urls[3] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/commons-codec/commons-codec/1.7/commons-codec-1.7.jar
+[ERROR] urls[4] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+[ERROR] Number of foreign imports: 1
+[ERROR] import: Entry[import  from realm ClassRealm[maven.api, parent: null]]
+[ERROR] 
+[ERROR] -----------------------------------------------------
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.github.iron9light:coffeescript-maven-plugin:1.2-BOB:compile (coffee) on project coffeescript-maven-plugin_basictest: Execution coffee of goal com.github.iron9light:coffeescript-maven-plugin:1.2-BOB:compile failed: Unable to load the mojo 'compile' in the plugin 'com.github.iron9light:coffeescript-maven-plugin:1.2-BOB' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: iron9light/coffeescriptMavenPlugin/CoffeeScriptCompileMojo : Unsupported major.minor version 51.0
+-----------------------------------------------------
+realm =    plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB
+strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
+urls[0] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/github/iron9light/coffeescript-maven-plugin/1.2-BOB/coffeescript-maven-plugin-1.2-BOB.jar
+urls[1] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/google/guava/guava/r09/guava-r09.jar
+urls[2] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/mozilla/rhino/1.7R3/rhino-1.7R3.jar
+urls[3] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/commons-codec/commons-codec/1.7/commons-codec-1.7.jar
+urls[4] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+Number of foreign imports: 1
+import: Entry[import  from realm ClassRealm[maven.api, parent: null]]
+
+-----------------------------------------------------
+
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:225)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.apache.maven.plugin.PluginExecutionException: Execution coffee of goal com.github.iron9light:coffeescript-maven-plugin:1.2-BOB:compile failed: Unable to load the mojo 'compile' in the plugin 'com.github.iron9light:coffeescript-maven-plugin:1.2-BOB' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: iron9light/coffeescriptMavenPlugin/CoffeeScriptCompileMojo : Unsupported major.minor version 51.0
+-----------------------------------------------------
+realm =    plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB
+strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
+urls[0] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/github/iron9light/coffeescript-maven-plugin/1.2-BOB/coffeescript-maven-plugin-1.2-BOB.jar
+urls[1] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/google/guava/guava/r09/guava-r09.jar
+urls[2] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/mozilla/rhino/1.7R3/rhino-1.7R3.jar
+urls[3] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/commons-codec/commons-codec/1.7/commons-codec-1.7.jar
+urls[4] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+Number of foreign imports: 1
+import: Entry[import  from realm ClassRealm[maven.api, parent: null]]
+
+-----------------------------------------------------
+
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:115)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	... 19 more
+Caused by: org.apache.maven.plugin.PluginContainerException: Unable to load the mojo 'compile' in the plugin 'com.github.iron9light:coffeescript-maven-plugin:1.2-BOB' due to an API incompatibility: org.codehaus.plexus.component.repository.exception.ComponentLookupException: iron9light/coffeescriptMavenPlugin/CoffeeScriptCompileMojo : Unsupported major.minor version 51.0
+-----------------------------------------------------
+realm =    plugin>com.github.iron9light:coffeescript-maven-plugin:1.2-BOB
+strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
+urls[0] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/github/iron9light/coffeescript-maven-plugin/1.2-BOB/coffeescript-maven-plugin-1.2-BOB.jar
+urls[1] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/com/google/guava/guava/r09/guava-r09.jar
+urls[2] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/mozilla/rhino/1.7R3/rhino-1.7R3.jar
+urls[3] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/commons-codec/commons-codec/1.7/commons-codec-1.7.jar
+urls[4] = file:/C:/Users/Metail/workspace/coffeescript-maven-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+Number of foreign imports: 1
+import: Entry[import  from realm ClassRealm[maven.api, parent: null]]
+
+-----------------------------------------------------
+
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:485)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:92)
+	... 20 more
+Caused by: java.lang.UnsupportedClassVersionError: iron9light/coffeescriptMavenPlugin/CoffeeScriptCompileMojo : Unsupported major.minor version 51.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(ClassLoader.java:631)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:615)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:283)
+	at java.net.URLClassLoader.access$000(URLClassLoader.java:58)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClassFromSelf(ClassRealm.java:386)
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:42)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:244)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:230)
+	at org.sonatype.guice.bean.reflect.URLClassSpace.loadClass(URLClassSpace.java:101)
+	at org.sonatype.guice.bean.reflect.NamedClass.load(NamedClass.java:45)
+	at org.sonatype.guice.bean.reflect.AbstractDeferredClass.get(AbstractDeferredClass.java:45)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:84)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:52)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:70)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:100)
+	at org.sonatype.guice.plexus.lifecycles.PlexusLifecycleManager.onProvision(PlexusLifecycleManager.java:138)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:108)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:55)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:68)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:45)
+	at com.google.inject.internal.InjectorImpl$3$1.call(InjectorImpl.java:965)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1011)
+	at com.google.inject.internal.InjectorImpl$3.get(InjectorImpl.java:961)
+	at com.google.inject.Scopes$1$1.get(Scopes.java:59)
+	at org.sonatype.guice.bean.locators.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.sonatype.guice.plexus.locators.LazyPlexusBean.getValue(LazyPlexusBean.java:49)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:253)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:245)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:455)
+	... 21 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginContainerException
