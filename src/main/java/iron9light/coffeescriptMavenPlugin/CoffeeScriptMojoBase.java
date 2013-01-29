@@ -53,6 +53,15 @@ public abstract class CoffeeScriptMojoBase extends AbstractMojo {
      */
     private String compilerUrl;
 
+    /**
+     * Cache directory if you want to turn caching on.
+     *
+     * @parameter
+     */
+    private File cacheDirectory = new File("C:\\Users\\Metail\\workspace\\integrated-ui\\src\\main\\webapp\\static\\cache");
+    
+    private CacheManager cache = new CacheManager(cacheDirectory);
+    
     private static Charset charset = Charsets.UTF_8;
 
     private static String newline = System.getProperty("line.separator");
@@ -145,11 +154,17 @@ public abstract class CoffeeScriptMojoBase extends AbstractMojo {
         } else if (Files.isDirectory(jsFile)) {
             getLog().warn(String.format("Cannot compile to %s, as there is a Directory with the same name", jsFileName));
             return false;
-        } else if (modifiedOnly && Files.exists(jsFile)) {
-            if (Files.getLastModifiedTime(jsFile).compareTo(Files.getLastModifiedTime(coffeeFile)) > 0) {
-                getLog().info(String.format("skip %s", coffeeFileName));
-                return true;
-            }
+        }
+        else {
+        	//if (isCacheEnabled && isInCache(coffeeFile, jsFile) ){
+            //
+        	//}
+        	/*else*/ if (modifiedOnly && Files.exists(jsFile)) {
+        		if (Files.getLastModifiedTime(jsFile).compareTo(Files.getLastModifiedTime(coffeeFile)) > 0) {
+        			getLog().info(String.format("skip %s", coffeeFileName));
+        			return true;
+        		}
+        	}
         }
 
         String coffeeSource = readAllString(coffeeFile);
