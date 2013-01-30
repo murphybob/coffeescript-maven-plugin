@@ -1,6 +1,9 @@
 package iron9light.coffeescriptMavenPlugin;
 
 import com.google.common.base.Charsets;
+import com.murphybob.CacheManager.CacheManager;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
@@ -52,15 +55,8 @@ public abstract class CoffeeScriptMojoBase extends AbstractMojo {
      * @parameter
      */
     private String compilerUrl;
-
-    /**
-     * Cache directory if you want to turn caching on.
-     *
-     * @parameter
-     */
-    private File cacheDirectory = new File("C:\\Users\\Metail\\workspace\\integrated-ui\\src\\main\\webapp\\static\\cache");
     
-    private CacheManager cache = new CacheManager(cacheDirectory);
+    private CacheManager cache = new CacheManager(getLog());
     
     private static Charset charset = Charsets.UTF_8;
 
@@ -70,10 +66,10 @@ public abstract class CoffeeScriptMojoBase extends AbstractMojo {
 
     public void execute() throws MojoExecutionException, MojoFailureException {
         CoffeeScriptCompiler compiler = new CoffeeScriptCompiler(getCoffeeScriptUrl(), bare);
-        getLog().info(String.format("Coffeescript version: %s", compiler.version));
+        getLog().info(String.format("Coffeescript version: %s (Bob edition)", compiler.version));
 
         if (!srcDir.exists()) {
-            throw new MojoExecutionException("Source directory not fount: " + srcDir.getPath());
+            throw new MojoExecutionException("Source directory not found: " + srcDir.getPath());
         }
 
         try {
@@ -155,14 +151,27 @@ public abstract class CoffeeScriptMojoBase extends AbstractMojo {
             getLog().warn(String.format("Cannot compile to %s, as there is a Directory with the same name", jsFileName));
             return false;
         }
-        else {
-        	//if (isCacheEnabled && isInCache(coffeeFile, jsFile) ){
-            //
-        	//}
-        	/*else*/ if (modifiedOnly && Files.exists(jsFile)) {
+        else {    		
+        	// First try to skip if source unchanged vs target
+        	if (modifiedOnly && Files.exists(jsFile)) {
         		if (Files.getLastModifiedTime(jsFile).compareTo(Files.getLastModifiedTime(coffeeFile)) > 0) {
         			getLog().info(String.format("skip %s", coffeeFileName));
         			return true;
+        		}
+        	}
+        	// if that failed try to pull from cache
+    		if(cache.isEnabled == true){
+        		getLog().debug("Checking cache for: " + coffeeFile);
+        		File cachedVersion = cache.getCachedVersion(coffeeFile.toFile(), "js");
+        		if(cachedVersion != null){
+        			try {
+	        			FileUtils.copyFile(cachedVersion, jsFile.toFile(), true);
+	        			getLog().debug("Retrieved from cache: " + coffeeFile);
+	        			return true;
+	        		} catch (IOException e) {
+	        			getLog().error("Cannot copy file from cache: " + cachedVersion + " -> " + jsFile);
+	        			e.printStackTrace();
+	        		}
         		}
         	}
         }
@@ -172,6 +181,7 @@ public abstract class CoffeeScriptMojoBase extends AbstractMojo {
         try {
             String jsSource = compiler.compile(coffeeSource);
             writeString(jsFile, jsSource);
+            cache.putCachedVersion(coffeeFile.toFile(), jsFile.toFile(), "js");
             getLog().info(String.format("Compiled: %s [%s]", coffeeFileName, new java.util.Date()));
         } catch (CoffeeScriptException ex) {
             getLog().error(String.format("Error: %s %s [%s]", coffeeFileName, ex.getMessage(), new java.util.Date()));
